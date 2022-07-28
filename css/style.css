@@ -76,11 +76,16 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 850px;
   margin: 0 auto;
   padding: 0px 15px;
+  height: 100%;
 }
 @media (max-width: 425px) {
   [class*=__container] {
     padding: 0px 10px;
   }
+}
+
+body {
+  height: 2000px;
 }
 
 @media (max-width: 634px) {
@@ -97,7 +102,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------Header-----------------*/
 .header {
-  padding-top: 44px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  padding-top: 14px;
+  background-color: #fff;
 }
 @media (max-width: 634px) {
   .header {
@@ -108,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .header__logo {
   position: relative;
